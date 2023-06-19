@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/파비콘.png">
+    <title>Porsche Customize</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+       *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            scroll-behavior: smooth;
+            text-decoration: none;
+            list-style: none;   
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000000;
+            z-index: 100;
+            box-shadow: 80px 0px 120px #000;
+            border-bottom: 1px solid #ffffff42;
+        }
+        .headerwrap{
+            margin: 0 auto;
+            width: 1400px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .logomenu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 0;
+        }
+        header .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 440px;
+            margin-left: 100px;
+            /* background-color: #ff7777; */
+
+        }
+        .menu li a{
+            line-height: 80px;
+            display: block;
+            height: 80px;
+            margin: 0 10px;
+            transition: all ease .3s;
+        }
+        .menu li:hover{
+            border-bottom: 1px solid #fff;
+            transition: all ease .3s;
+        }
+        .submenu{
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 350px;
+        }
+        .iconmenu{
+            padding-top: 8px;
+            /* width: 120px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin: 0;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+            }
+        .icon{
+            font-size: 28px;
+        }
+        .logo{
+            /* width: 100px; */
+            height: 50px;
+            display: block;
+            margin-right: 60px;
+            /* background-color: #fff; */
+            text-align: center;
+            margin: 0;
+        }
+        .logo img{
+            height: 100%;
+            
+        }
+
+        #wrapper{
+            text-align: center;
+            /* background-color: rgb(83, 83, 83); */
+            background-image: url(image/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            /* width: 1920px; */
+            /* height: 1080px; */
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .carImage{
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80vw;
+            /* height: 1080px; */
+            /* height: 400px; */
+            filter: brightness(100%);
+            z-index: 10;
+            padding: 0;
+            margin: 0;
+        }
+        button{
+            color: #000;
+        }
+        .btnwrap{
+            height: 60px;
+            top: 200px;
+            left: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 0s;
+            z-index: 11;
+            margin: 0;
+            margin-left: 50px;
+            margin-top: 20px;
+         }
+        .allbtnwrap p{
+            margin: 0;
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+        .btnwrap>div{
+            margin-right: 20px;
+        }
+        
+
+        .btnwrap2{
+            margin: 0;
+            height: 60px;
+            display: flex;
+            margin-left: 50px;
+            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btnwrap2>div{
+            margin-right: 20px;
+        }
+        .btnwrap3{
+            height: 90px;
+            margin-left: 55px;
+            margin-top: 20px;
+        }
+        .bgbtn1{
+            background-image: url(image/bg4.jpg);
+            width: 56px;
+            height: 56px;
+            /* background-color: aqua; */
+            cursor: pointer;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 10px;
+            transition: all .2s ease;
+        }
+       
+     
+        input[name=color]{
+            display: none;
+        }
+        input[name=color]#black+label{
+            background-image: url(image/black.png);
+        }
+        input[name=color]#mint+label{
+            background-image: url(image/blue.png);
+        }
+        input[name=color]#white+label{
+            background-image: url(image/white.png);
+        }
+        input[name=color]+label{
+            display: inline-block;
+            cursor: pointer;
+            height: 64px;
+            width: 64px;
+            border-radius: 36px;
+            background-position: center center;
+            background-size: cover;
+        }
+        input[name=wheel]{
+            display: none;
+        }
+        input[name=wheel]+label{
+            display: inline-block;
+            cursor: pointer;
+            height: 64px;
+            width: 64px;
+            border-radius: 36px;
+            background-image: url(image/wheel2.png);
+            background-position: center;
+            background-size: 145%;
+            font-weight: bold;
+            
+        }
+        input[name=wheel]#wheel2+label{
+            background-image: url(image/wheel1.png);
+        }
+        input.select+label{
+            border: 3px solid white;
+            position: relative;
+        }
+        input.select+label::after{
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            position: absolute;
+            border-radius: 8px;
+            right: 0;
+            top: 0;
+            background-image: url(image/done.png);
+            background-position: center;
+            background-size: contain;
+        }
+        .design_btn{
+            display: block;
+            position: absolute;
+            left: 50px;
+            /* top: 82vh; */
+            bottom: 50px;
+            width: 204px;
+            margin: 0;
+            /* margin-left: 50px; */
+            height: 50px;
+            border: 3px solid #fff;
+            text-align: center;
+            line-height: 46px;
+            font-size: 18px;
+            transition: all ease .2s;
+        }
+        .design_btn:hover{
+            background-color: white;
+             color: #333;
+            }
+
+        .wrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .imagewrap{
+            width: 75%;
+            /* background-color: aqua; */
+            height: 100vh;
+            position: relative;
+            margin: 0;
+        }
+        #carImage{
+            width: 105%;
+            padding-top: 23vh;
+            z-index: 10;
+            position: relative;
+        }
+        .deg{
+                width: 50%;
+                position: absolute;
+                left: 50%;
+                top: calc(33vw + 110px); 
+                transform: translateX(-50%);
+                z-index: 0;
+                opacity: .5;
+        }
+        @media (max-width: 1700px) {
+        .deg {
+            top: calc(30vw + 100px);
+        }
+        }
+
+        .allbtnwrap{
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: relative;
+            z-index: 11;
+            margin: 0;
+            padding-top: 100px;
+            display: flex;
+            align-items:flex-start;
+            justify-content: left;
+            flex-direction: column;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="headerwrap">
+                
+                
+                <a href="index.html" class="logo"><img src="image/logo.png" alt=""></a>
+                <ul class="menu">
+                    <li><a href="index.html">MODELS</a></li>
+                    <li><a href="index3.html">DESIGN</a></li>
+                    <li><a href="index2.html">CUSTOMIZE</a></li>
+                    <li><a href="">SEVICE</a>
+                    </li>
+                </ul>
+              
+                <ul class="iconmenu">   
+                    <li><a href=""><span class="material-symbols-outlined icon">menu</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrap">
+        <div class="imagewrap">
+        <img src="color1wheel1/000.png" alt="" id="carImage" draggable="false">
+        <img src="image/Ellipse 20.png" alt="" class="deg">
+        </div>
+    
+        <div class="allbtnwrap">
+            <p>Color</p>
+            <div class="btnwrap">
+                <div>
+                    <input type="radio" class="radio select" id="white" name="color" value="1" checked = "true" />
+                    <label for="white"></label>
+                </div>
+                <div>
+                    <input type="radio" class="radio" id="mint" name="color" value="2" />
+                    <label for="mint"></label>
+                </div>
+                <div>
+                    <input type="radio" class="radio" id="black" name="color" value="3" />
+                    <label for="black"></label>
+                </div>
+                </div>
+                <p>wheel</p>
+            <div class="btnwrap2">
+                
+                <div>
+                    <input type="radio" class="radio select" id="wheel1" name="wheel" value="1"checked = "true" />
+                    <label for="wheel1"></label>
+                </div>
+                <div>
+                    <input type="radio" class="radio" id="wheel2" name="wheel" value="2" />
+                    <label for="wheel2"></label>
+                </div>
+            </div>
+            <p>Scene</p>
+            <div class="btnwrap3">
+                
+                <div class="bgbtn1"></div>
+            </div>
+            <a href="" class="design_btn">Online Booking</a>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        const wrapper=document.querySelector("#wrapper")
+        const carImage=document.querySelector("#carImage")
+        const allbtnwrap=document.querySelector(".allbtnwrap")
+        //과거에 돌린정도
+        let save = 0;
+        // 현재 돌린 정도
+        let dragged = 0;
+        //합계
+        let sum = 0;
+        //드래그 민감도
+        const sensitivity = 30;
+
+        let clickedSrc = "";
+        let changeSrc = "";
+
+        //마우스 왼쪽 버튼을 누른 시점
+        carImage.addEventListener("mousedown",function(e){
+            const x = e.clientX;
+            //마우스 클릭시 이미지 소스
+            clickedSrc=carImage.src;
+            //마우스 버튼을 누른채 움직임
+            wrapper.addEventListener("mousemove",rotate);
+            function rotate(e){
+                dragged=parseInt((e.clientX-x)/sensitivity);
+                sum=save+dragged;
+                //우측으로 끌기
+                if(dragged>=0){
+                    sum=sum % 50
+                }else{
+                    if(sum<1){
+                        sum+=50;
+                    }
+                }//합이 1보다 작아질때 마지막 이미지인 51번째로 이동
+                //00+sum의 값의 이름의 이미지가 재생
+                changeSrc=clickedSrc.replace(/00[0-9]+/,"00"+sum);
+                console.log(changeSrc)
+                carImage.src=changeSrc;
+                wrapper.style.cursor="grabbing"
+            }
+            //마우스 드래그를 끝낸경우
+            window.addEventListener("mouseup",function(){
+                wrapper.removeEventListener("mousemove",rotate);
+                wrapper.style.cursor="default"
+                save=sum;
+                dragged=0;
+            })
+        })
+
+        
+        const color1btn=document.querySelector("input#white")
+        const color2btn=document.querySelector("input#mint")
+        const color3btn=document.querySelector("input#black")
+        const wheel1btn=document.querySelector("input#wheel1")
+        const wheel2btn=document.querySelector("#wheel2")
+        const radio = document.querySelectorAll(".radio")
+        const bgbtn1 = document.querySelector(".bgbtn1")
+        let ct =1;
+        let wt =1;
+        console.log(radio)
+        let bgChange = false;
+
+        //배경 버튼을 누를 경우
+        bgbtn1.addEventListener("click", function() {
+            bgChange=!bgChange
+            //change인 경우와 아닌경우 배경이미지 소스와 밝기값을 바꿔줌(야외가 밝게)
+            if(bgChange){
+                wrapper.style.backgroundImage="url(image/bg.jpg)"
+            wrapper.style.backgroundPosition="center"
+            carImage.style.filter="brightness(100%)"
+            bgbtn1.style.backgroundImage="url(image/bg4.jpg)"
+            }else{
+                wrapper.style.backgroundImage="url(image/bg4.jpg)"
+            // wrapper.style.backgroundPosition="bottom"
+            carImage.style.filter="brightness(140%)"
+            bgbtn1.style.backgroundImage="url(image/bg.jpg)"
+            }
+            
+        });
+
+        const colorButtons = document.querySelectorAll('input[type="radio"][name="color"]');
+        const wheelButtons = document.querySelectorAll('input[type="radio"][name="wheel"]');
+
+colorButtons.forEach(function(colorButton) {
+  colorButton.addEventListener('click', function() {
+    colorButtons.forEach(function(btn) {
+    //이전에 클릭된 버튼에서 select 클래스를 지워줌
+      btn.classList.remove('select');
+    });
+    //어떤 색 버튼이 눌렸는지에 따라 valuer값을 지정해줌
+    if (color1btn.checked) {
+      ct = color1btn.value;
+    } else if (color2btn.checked) {
+      ct = color2btn.value;
+    } else if (color3btn.checked) {
+      ct = color3btn.value;
+    }
+    //클릭된 색 버튼에는 select 추가
+    if(colorButton.checked){
+        colorButton.classList.add("select")
+    }
+    //클릭했을 때 이미지 소스를 value값이 들어가게 경로 지정
+    clickedSrc = `color${ct}wheel${wt}/00` + sum + '.png';
+    carImage.src = clickedSrc;
+    console.log(clickedSrc);
+  });
+});
+
+
+//<휠 버튼> 위 색 버튼과 동일한 방식
+wheelButtons.forEach(function(wheelButton) {
+  wheelButton.addEventListener('click', function() {
+    wheelButtons.forEach(function(btn) {
+      btn.classList.remove('select');
+    });
+    if (wheel1btn.checked) {
+      wt = wheel1btn.value;
+    } else if (wheel2btn.checked) {
+      wt = wheel2btn.value;
+    }
+
+    clickedSrc = `color${ct}wheel${wt}/00` + sum + '.png';
+    carImage.src = clickedSrc;
+    console.log(clickedSrc);
+    if(wheelButton.checked){
+        wheelButton.classList.add("select")
+    }
+    clickedSrc = `color${ct}wheel${wt}/00` + sum + '.png';
+    carImage.src = clickedSrc;
+    console.log(clickedSrc);
+  });
+});
+
+    
+
+
+
+    </script>
+</body>
+</html>

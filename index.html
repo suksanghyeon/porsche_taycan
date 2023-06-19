@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/파비콘.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>Porsche Taycan</title>
+</head>
+<body>
+    
+    <header>
+        <div class="headerwrap">
+            <div class="logomenu">
+                <a href="index.html" class="logo"><img src="image/logo.png" alt=""></a>
+                <ul class="menu">
+                    <li><a href="index.html">MODELS</a></li>
+                    <li><a href="index3.html">DESIGN</a></li>
+                    <li><a href="index2.html">CUSTOMIZE</a></li>
+                    <li><a href="#">SEVICE</a></li>
+                </ul>
+            </div>
+            <ul class="iconmenu">
+                <li><a href=""><span class="material-symbols-outlined icon">menu</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="movie">
+         <canvas id="veneno"></canvas>
+    </div>
+    <div class="intro_wrap">
+        <div class="introtxt">
+            <h2 class="h2tag">MEANS THE EQUIVALENT OF</h2>
+            <h1 class="h1tag">‘SPIRITED YOUNG HORSE’</h1> 
+            <img src="image/Taycan.png" alt="" class="taycanlogo">  
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="rotate_number">
+            <div class="container">
+                <span class="num number" data-val="431"  >0</span>
+                <span class="unit">km</span>
+                <span class="name">RANGE</span>
+            </div>
+            <div class="container">
+                <span class="num number" data-val="670">0</span>
+                <span class="unit">hp</span>
+                <span class="name">HORSEPOWER</span>
+            </div>
+            <div class="container">
+                <span class="num number" data-val="850">0</span>
+                <span class="unit">Nm</span>
+                <span class="name">TORQUE</span>
+            </div>
+            <div class="container">
+                <span class="num number" data-val="40">0</span>
+                <span class="unit">sec</span>
+                <span class="name">0-100</span>
+            </div>
+            <div class="container">
+                <span class="num number" data-val="250">000</span>
+                <span class="unit">km/h</span>
+                <span class="name">TOP SPEED</span>
+            </div>
+        </div>
+
+
+        <div class = "background">
+            <span class="material-symbols-outlined leftbtn">arrow_back_ios</span>
+            <div class = "contents">
+                <div class="info">
+                    <h2 class="carname">Taycan</h2>
+                    <p class="cost">129.900.000 KRW 부터</p>
+                    <p class="text">타이칸은 빈틈이 없으며 일상 생활에 완벽한 모델입니다. 눈에 띄는 비율, 시대를 초월하여 즉시 알아볼 수 있는 디자인. 넓은 내부와 2개의 적재 공간을 갖추어 4인에게 편안함과 편리함을 제공합니다.</p>
+                    <a href="index2.html" class="design_btn">Customize Exterior</a>
+                </div>
+                <img class="porsche_series" src="image/porsche1.png" alt="" width="800">
+                <div class="svgbox">
+                    <svg>
+                        <ellipse cx="150" cy="430" rx="85" ry="300" />
+                    </svg>
+                </div>
+            </div>
+            <span class="material-symbols-outlined rightbtn">arrow_forward_ios</span>
+        </div>
+        
+
+        
+        <div id="slider">  
+            <div class="slides slide1"></div>
+            <div class="slides slide2"></div>
+            <div class="slides slide3"></div> 
+         <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+     
+        <div class="history">
+            <div class="context1 context">
+                <div class="front_porsche"></div>
+                <div class="soundwave"></div>
+                <audio id="taycanSound">
+                
+                    <source src="porsche_taycan.wav" type="audio/wav" >
+                  </audio>
+                  <div class="controlbar">
+                    <span class="material-symbols-outlined playbtn"  style="margin: 0; cursor: pointer;">
+                        play_circle
+                    </span> 
+                    <p class="soundname">Taycan Sound</p> 
+                    <div class="playline"></div>
+                    <div class="pause">
+                        <div class="pause1"></div>
+                        <div class="pause1"></div>
+                    </div>
+                </div>
+                <div class="context_txt1">
+                    <span>Porsche Design</span>
+                    <h3>The History Of Porsche Begins <br> With Electricity</h3>
+                    <p>
+                        Ferdinand Porsche, who later founded a company of the same name, was fascinated by electricity since he was a teenager. In early 1893, when he was 18 years old, he installed an electric lighting system at his parents' house. In the same year, Porsche joined the Vereinigte Elektrizitäts-AG Béla Egger in Vienna. After four years there, he was promoted from mechanic to head of the testing department. The first car he designed was also equipped with an electric drive. Therefore, the history of Porsche begins with an electric drive.
+                    </p>
+                </div>
+            
+            </div>
+            <div class="context2 context">
+                <div class="history_img1"></div>
+                <div class="context_txt2">
+                    <h4>World's First Functional Hybrid Car,</h4>
+                    <p>In 1900, Porsche designed the world's first functional hybrid car, the Semper Vivus (Latin meaning "always alive"). Sold as a Lohner-Porsche system, this technology can be applied beyond the electric vehicle realm.</p>
+                </div>
+            </div>
+            <div class="context3 context">
+                
+                <div class="context_txt3">
+                    <h4>800V Architecture</h4>
+                    <p>The Porsche's soul can be found in all aspects of performance. A good example of this, the Taycan shines even during charging, producing up to 270 kW of charging power through its 800V structure. The Tycan Turbo can travel up to 100 km (WLTP) in optimal conditions with only 4.5 minutes to charge, allowing the driver to start driving at any time of the day.</p>
+                </div>
+                <div class="history_img2">
+                    <div class="offset_img1"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="design_prev">
+            <div class="ex_prev">
+                <div class="ex_banner banner"></div>
+                <div class="ex_txt de_txt">
+                    <div class="de_tit">
+                    <span>DESIGN</span>
+                    <h4>Exterior Design</h4>
+                    </div>
+                    <p>Porsche's first four-door pure electric sports sedan was born, reflecting Porsche design DNA. The silhouette of the Taycan is completed with a sporty loop line sloping backwards, called a "fly line" for Porsche designers.</p>
+                    <a href="index3.html" class="design_btn">Show More</a>
+                </div>
+            </div>
+            <div class="in_prev">
+                
+                <div class="in_txt de_txt">
+                    <div class="de_tit">
+                        <span>DESIGN</span>
+                        <h4>Interior Design</h4>
+                    </div>
+                    <p>  The interior of the taycan was developed in 1963 with <br> a modern design inspired by the pure dashboard of the original 911. The cockpit with a clear structure designed for drivers highlights the beginning of a new era.  </p>
+                    <a href="index3.html" class="design_btn">Show More</a>
+                </div>
+                <div class="in_banner banner"></div>
+            </div>
+        </div>
+        <div class="scroll_powerBG">
+        <div class="scroll_power">
+            <div class="scroll_txt">
+            <span>The powertrain:</span>
+            <h4>Pure Performance</h4>
+            <p> Breathtaking acceleration figures, typical sports car traction and superior, continuously available power output. These are the aspects that have to be fulfilled if you want to talk about a true sports car. <br> The new Taycan meets these requirements. </p>
+            </div>
+            <div class="carscroll_img">
+                <div class="circle1 circle"></div>
+                    <div class="circle2 circle"></div>
+                    <div class="circle3 circle"></div>
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                    <p class="linetxt2 linetxt">Front electric motor with <br> power electronics </p>
+                    <p class="linetxt1 linetxt">Liquid cooled <br> lithium-ion battery</p>
+                    <p class="linetxt3 linetxt">Rear electric motor with <br> power electronics </p>
+                <div class="powertrain_img">
+                    
+                </div>
+                <div class="carperspec_img"></div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_logo">
+    
+            </div>
+            <div class="footer_menu_wrap">
+                <ul class="foot_menu1">
+                    <li><a href="index2.html">CUSTOMIZE</a></li>
+                    <li><a href="index.html">History</a></li>
+                    <li><a href="index.html">about porsche</a></li>
+                    <li><a href="index3.html">design</a></li>
+                </ul>
+                <ul class="foot_menu2">
+                    <li><a href="">Passion Motorsports</a></li>
+                    <li><a href="">Porsche Experience</a></li>
+                    <li><a href="">Porsche Classic</a></li>
+                </ul>
+                <ul class="foot_menu3">
+                    <li><a href="">Contact & Information</a></li>
+                    <li><a href="">Christophorus</a></li>
+                    <li><a href="">Porsche Company</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_wrap2">
+            <ul class="footer_icon">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <div class="footer_logo2"></div>
+        </div>
+        <div class="footer_last">
+            <p>Copyright © 2023 Porsche Korea Ltd.</p>
+            <ul class="footer_last_menu">
+                <li><a href="">COOKIE SETTINGS</a></li>
+                <li><a href="">SITEMAP</a></li>
+                <li><a href="">NEWSLETTER</a></li>
+                <li><a href="">ACCESSIBILITY</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    </div>
+        
+
+
+    
+    
+    <script>
+    // 인트로 스크롤 //
+        (function(){
+//canvas 태그를 사용하여 스크롤 영상 삽입
+  const html = document.documentElement;
+  const canvas = {
+    'element' : document.getElementById("veneno"),
+    'width' : 1920,
+    'height' : 1080,
+    'frameCount':180
+  }
+  const context = canvas.element.getContext("2d");
+  const canvasImage = new Image();
+  let a = 0;
+  
+  //000_의 파일명을 인식
+  const currentFrame =  index=>(
+
+    `tmp/${(index).toString().padStart(4, '0')}.png`
+  )
+//이미지가 한장씩 변하며 영상처럼 재생
+  const preloadImages = () => {
+    for (let i = 1; i < canvas.frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+     
+    }
+  };
+
+  const updateImage = index => {
+   
+    canvasImage.src = currentFrame(index);
+    context.drawImage(canvasImage, 0, 0);
+  }
+
+  //웹페이지가 로드 될때 캔버스의 사이즈를 정해줌
+  window.addEventListener('DOMContentLoaded', () => {
+    canvas.element.width = canvas.width;
+    canvas.element.height = canvas.height;
+    canvasImage.src = currentFrame(1); 
+    canvasImage.onload=function(){
+      context.drawImage(canvasImage, 0, 0);
+    }
+    preloadImages();
+  });
+  
+  //스크롤 이벤트// 
+
+ window.addEventListener('scroll', () => {  
+    
+    //파워트레인//
+    const scrollPower = document.querySelector('.scroll_power');
+    const scrollPowerRect = scrollPower.getBoundingClientRect();
+    const scrollPowerHeight = scrollPowerRect.height;
+    const line1=document.querySelector(".line1")
+    const line2=document.querySelector(".line2")
+    const line3=document.querySelector(".line3")
+    const h1tag=document.querySelector(".h1tag")
+    const h2tag=document.querySelector(".h2tag")
+    const taycantag=document.querySelector(".taycanlogo")
+    const carScrollImg = document.querySelector('.powertrain_img');
+    const carScrollImg2 = document.querySelector('.carperspec_img');
+    const carScrollImgRect = carScrollImg.getBoundingClientRect();
+    const carScrollImgBottom = carScrollImgRect.bottom - scrollPowerRect.top;
+    const lineText=document.querySelectorAll(".linetxt")
+    const circles=document.querySelectorAll(".circle")
+    const distanceToBottom = scrollPowerHeight - carScrollImgBottom;
+    
+    
+//scrollY의 위치에 따라 h1,h2태그의 투명도를 변경
+    if(window.scrollY>1100 && window.scrollY<2600){
+    h1tag.style.opacity=1;
+    h2tag.style.opacity=1;
+    }else{
+        h1tag.style.opacity=0;
+        h2tag.style.opacity=0;
+    }
+    if(window.scrollY>3200){
+        taycantag.style.opacity=1;
+    }else{
+        taycantag.style.opacity=0
+    }
+    
+
+
+    //파워트레인 투명도 변화
+    //transparency 값에 따라 자동차이미지의 투명도를 점점줄이고 파워트레인 이미지의 투명도를 점점 높임
+    var transparency = distanceToBottom / scrollPowerHeight;
+    console.log(transparency)
+    
+    if(transparency<.52){
+        carScrollImg.style.opacity = 1 - transparency;
+        carScrollImg2.style.opacity = transparency;
+    }else{
+        carScrollImg2.style.opacity = 1 ;
+    }
+    if(transparency<.5){
+        line1.classList.add("longline")
+        line2.classList.add("longline")
+        line3.classList.add("longline")
+    }
+    else{
+        line1.classList.remove("longline")
+        line2.classList.remove("longline")
+        line3.classList.remove("longline")
+    }
+
+    lineText.forEach(linetxt=>{
+        if(transparency<.5){
+            linetxt.classList.add("txtopacity")
+        }else{
+            linetxt.classList.remove("txtopacity")
+        }
+    })
+    circles.forEach(circle=>{
+        if(transparency<.5){
+            circle.classList.add("circleopacity")
+        }else{
+            circle.classList.remove("circleopacity")
+        }
+    })
+
+    //스크롤값 확인
+    console.log(window.scrollY);
+
+
+    const scrollTop = html.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const frameIndex = Math.min(
+      canvas.frameCount - 1,
+      Math.ceil(scrollFraction * canvas.frameCount)
+    );
+    const rotateNumber=document.querySelector(".rotate_number")
+   
+
+    //숫자 카운팅
+    let rotateTop=rotateNumber.getBoundingClientRect().top;
+    let rotateMid=rotateTop+rotateNumber.getBoundingClientRect().height/2;
+    let windowMid=window.innerHeight/2;
+    console.log(windowMid-rotateMid)
+    //사이의 차이 절댓값이 10보다 작은 경우에만 아래의 코드를 실행
+    if(Math.abs(windowMid-rotateMid)<10){
+    let valueDisplays = document.querySelectorAll(".num")
+    //숫자가 변경되는 간격
+    let interval = 1000;
+        valueDisplays.forEach((valueDisplay) => {
+            //시작값 0
+            let startValue=0;
+            //data-val적어둔 값이 최종값
+            let endValue=parseInt(valueDisplay.getAttribute
+            ("data-val"));
+            //숫자값이 변경되는데 걸리는 밀리초
+            let duration = Math.floor(interval/endValue);
+            let counter = setInterval(function(){
+                
+                if(endValue>=450){
+                    startValue+=2;
+                }else{
+                    startValue+=1;
+                }
+                valueDisplay.textContent=startValue
+                if(startValue==endValue){
+                    clearInterval(counter);
+                }
+                
+            },duration)
+        });
+    }
+   
+
+    //스코롤 값에 따라 천막 벗겨지는 자동차 이미지 변경
+    requestAnimationFrame(() => updateImage(frameIndex + 3));
+  });
+})();
+
+
+
+//타이칸 시리즈
+    const leftbtn = document.querySelector(".leftbtn")
+    const rightbtn = document.querySelector(".rightbtn")
+    const porsche = document.querySelector(".porsche_series")
+    const carname = document.querySelector(".carname")
+    const cost = document.querySelector(".cost")
+    const text = document.querySelector(".text")
+    const spinsvg=document.querySelector("ellipse")
+    const background=document.querySelector(".background")
+ 
+
+    const info = [
+    {
+        carname:"Taycan",
+        cost:"129.900.000 KRW 부터",
+        text:"타이칸은 빈틈이 없으며 일상 생활에 완벽한 모델입니다. 눈에 띄는 비율, 시대를 초월하여 즉시 알아볼 수 있는 디자인. 넓은 내부와 2개의 적재 공간을 갖추어 4인에게 편안함과 편리함을 제공합니다."
+    },
+    {
+        carname:"Taycan 4 Cross Turismo",
+        cost:"1249.900.000 KRW 부터",
+        text:"타이칸 크로스 투리스모는 확장된 후면 적재 공간과 더욱 넓은 내부 공간으로 라이프 스타일을 아우릅니다. 대담한 기능은 오프로드 디자인 패키지 특유의 악센트로 더욱 강조됩니다."
+    },
+    {
+        carname:"The new Taycan GTS",
+        cost:"1875.000.000 KRW 부터",
+        text:"신형 타이칸 GTS는 순수 전기 모드의 짜릿한 감성으로 포르쉐 드라이빙 경험을 새롭게 정의합니다. 순수한 드라이빙의 즐거움의 상징이 된 세 글자, 바로 GTS입니다."
+    }
+]
+
+
+        
+    let currentNumber = 1;
+        //왼쪽버튼
+        //왼쪽버튼 클릭시 페이지 넘버 변경 0보다 작아지면 다시 3으로
+        leftbtn.addEventListener("click",function(e){
+            currentNumber--;
+            if(currentNumber <= 0){
+                currentNumber = 3;
+            }
+
+            carname.innerHTML=info[currentNumber-1].carname;
+            cost.innerHTML=info[currentNumber-1].cost;
+            text.innerHTML=info[currentNumber-1].text;
+             porsche.src = `image/porsche${currentNumber}.png`
+             const target = e.currentTarget
+             //svg ellipse 애니메이션을 왼쪽과 오른쪽 버튼에 다른 방식을 사용 
+             //svg에 display none 을 주어 값을 초기화시키고 0초의 짧은 시간후 다시 block을 주어 애니메이션이 버튼을 누를때마다 재생됨
+             spinsvg.style.display = 'none'
+             setTimeout(()=>{
+                spinsvg.style.display = 'block'
+             },0)
+             spinsvg.classList.add("spin_svg")
+            })
+        
+        //오른쪽 버튼
+        rightbtn.addEventListener("click",function(e){
+            currentNumber++;
+            if(currentNumber > 3){
+                currentNumber = 1;
+            }
+            const target = e.currentTarget
+            carname.innerHTML=info[currentNumber-1].carname;
+            cost.innerHTML=info[currentNumber-1].cost;
+            text.innerHTML=info[currentNumber-1].text;
+           
+            porsche.src = `image/porsche${currentNumber}.png`
+            //왼쪽 버튼과는 다르게 void를 사용 클래스가 존재하면 지우고 브라우저는 변화를 감지하지만 넘어가며 클래스를 다시 추가
+            spinsvg.classList.remove('spin_svg');
+            void target.offsetWidth;
+            spinsvg.classList.add("spin_svg");
+            
+            })
+
+
+
+
+
+        //캐러샐
+            var index = 0;
+            const slide = document.querySelector("#slider");
+            var slides = document.querySelectorAll(".slides");
+            var dot = document.querySelectorAll(".dot");
+            let slideWidth = slide.clientWidth;
+         //인덱스가 0보다 작을 경우 현재 인덱스를 마지막 슬라이드로   
+        function changeSlide(){
+        if(index<0){
+            index = slides.length-1;
+        }
+        //인덱스가 최대갯수 보다 커질경우 인데스를 첫 슬라이드로
+        if(index>slides.length-1){
+            index = 0;
+        }
+        
+        for(let i=0;i<slides.length;i++){
+            const offset = slideWidth*(index-1);
+            //슬라이드 인덱스값과 길이를 통해 슬라이드를 이동시킨다
+            slides[i].setAttribute("style", `left: ${-offset}px`);
+            dot[i].classList.remove("active");
+        }
+        //인덱스값으로 하단 dot에 active 클래스를 추가해줌 
+        dot[index].classList.add("active");
+        index++;
+        //3초마다 슬라이드 이동
+        setTimeout(changeSlide,3000);  
+        }
+        changeSlide();
+
+
+        var audio = document.getElementById("taycanSound");
+        var soundArea = document.querySelector(".history");
+        const playbtn=document.querySelector(".playbtn")
+        const pausebtn=document.querySelector(".pause")
+        const historyCont1=document.querySelector(".context1")
+        const historyCont2=document.querySelector(".context2")
+        const historyCont3=document.querySelector(".context3")
+        const cont1txt=document.querySelector(".context_txt1")
+        const cont2txt=document.querySelector(".context_txt2")
+        const cont3txt=document.querySelector(".context_txt3")
+        const exprev=document.querySelector(".ex_prev")
+        const inprev=document.querySelector(".in_prev")
+        const extxt=document.querySelector(".ex_txt")
+        const intxt=document.querySelector(".in_txt")
+        const scrolltxt=document.querySelector(".scroll_txt")
+        const scrollpower=document.querySelector(".scroll_power")
+
+        //플레이 버튼을 클릭시 오디오 재생
+        playbtn.addEventListener("click",function playAudio(){
+            if (audio.paused) {
+            audio.play();
+        }    
+        })
+        //정지 버튼을 누르면 오디오 정지
+        pausebtn.addEventListener("click",function pauseAudio(){
+            if (!audio.paused) {
+            audio.pause();
+        }    
+        })
+
+        function playAudio() {
+        if (audio.paused) {
+            audio.play();
+        }
+        }
+        //오디오가 재생중이라면 오디오를 정지시키고 시작위치로 변경
+        function pauseAudio() {
+        if (!audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        }
+
+        //observer를 사용해 특정요소와 화면의 교차점을 감지하여 기능 재생 
+        //scroll위치를 사용하니 모니터 해상도에 따라 다른 결과를 보여주는 문제가 있어서 사용
+
+        var options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1  //요소가 10%이상 보이면 교차점으로 간주
+        };
+        //교차점일 경우 음악을 재생 아닐경우 정지
+        var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            playAudio();
+            } else {
+            pauseAudio();
+            }
+        });
+        }, options);
+        observer.observe(soundArea);
+
+
+        //하단 observer 전부 동일 방식
+
+        var options2 = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.8
+            };
+
+        var observer2 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                spinsvg.classList.add("spin_svg");
+            }else{
+                spinsvg.classList.remove("spin_svg")
+            }
+        });
+        }, options2);
+
+        observer2.observe(background);
+
+
+        
+        var options3 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.8 
+        };
+        console.log(observer3)
+        var observer3 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            cont1txt.style.opacity=1
+            cont1txt.style.transform="translateY(0px)"
+            // cont1txt.style.color='red'
+            } else {
+            cont1txt.style.opacity=0
+            cont1txt.style.transform="translateY(60px)"
+            }
+        });
+        }, options3);
+
+        observer3.observe(historyCont1);
+
+
+        
+        var options4 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .5
+        };
+        var observer4 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            cont2txt.style.opacity=1
+            cont2txt.style.transform="translateY(0px)"
+            // cont1txt.style.color='red'
+            } else {
+            cont2txt.style.opacity=0
+            cont2txt.style.transform="translateY(60px)"
+            }
+        });
+        }, options4);
+
+        observer4.observe(historyCont2);
+        
+
+        var options5 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .5
+        };
+        var observer5 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            cont3txt.style.opacity=1
+            cont3txt.style.transform="translateY(0px)"
+            // cont1txt.style.color='red'
+            } else {
+            cont3txt.style.opacity=0
+            cont3txt.style.transform="translateY(60px)"
+            }
+        });
+        }, options5);
+
+        observer5.observe(historyCont3);
+
+        var options6 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .5
+        };
+        var observer6 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            extxt.style.opacity=1
+            extxt.style.transform="translateY(0px)"
+            // cont1txt.style.color='red'
+            } else {
+            extxt.style.opacity=0
+            extxt.style.transform="translateY(60px)"
+            }
+        });
+        }, options6);
+
+        observer6.observe(exprev);
+
+        
+        var options7 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .5
+        };
+        var observer7 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            intxt.style.opacity=1
+            intxt.style.transform="translateY(0px)"
+            // cont1txt.style.color='red'
+            } else {
+            intxt.style.opacity=0
+            intxt.style.transform="translateY(60px)"
+            }
+        });
+        }, options7);
+
+        observer7.observe(inprev);
+
+        var options8 = {
+        root: null,
+        rootMargin: "0px",
+        threshold: .2
+        };
+        var observer8 = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+            scrolltxt.style.opacity=1
+            scrolltxt.style.transform="translateY(0px)"
+            } else {
+            scrolltxt.style.opacity=0
+            scrolltxt.style.transform="translateY(60px)"
+            }
+        });
+        }, options8);
+
+        observer8.observe(scrollpower);
+
+        
+    </script>
+</body>
+</html>
